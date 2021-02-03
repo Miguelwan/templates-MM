@@ -1,7 +1,7 @@
 #Linear regresion script with only numpy
 import numpy as np
 
-#import matplotlib to make the graphic
+#Import matplotlib to make the graphic
 import matplotlib.pyplot as plt
 
 
@@ -16,7 +16,7 @@ def estimate_b_0_b_1(x, y):
     return(b_0, b_1)
 
 
-#graph the regresion
+#Graph the regresion
 def plot_regresion(x, y, b):
     plt.scatter(x, y, color = 'g', marker = 'o', s = 30)
     y_pred = b[0] + b[1]*x
