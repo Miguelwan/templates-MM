@@ -11,7 +11,7 @@ training_set = subset(dataset, split == TRUE)
 test_set = subset(dataset, split == FALSE)
 
 #Fit the model
-regressor = lm(formula = X ~ Y, 
+regressor = lm(formula = Y ~ X, 
                data = training_set)
 
 #Prediction
